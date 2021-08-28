@@ -15,7 +15,6 @@ if(!yaş) return message.channel.send(`${client.emojis.cache.get(ayarlar.no)} **
 if(isNaN(yaş)) return message.channel.send(`${client.emojis.cache.get(ayarlar.no)} **Belirttiğin yaş rakamlardan oluşmalı!**`).then(message.react(client.emojis.cache.get(ayarlar.no)))
   
 etiketlenenKişi.roles.add(ayarlar.erkekRol1)
-etiketlenenKişi.roles.add(ayarlar.erkekRol2)
 etiketlenenKişi.roles.remove(ayarlar.kayıtsızRol)
 etiketlenenKişi.setNickname(`${ayarlar.tag} ${isim} ${ayarlar.sembol} ${yaş}`)
 
